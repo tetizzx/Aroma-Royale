@@ -1,0 +1,124 @@
+/* Botão do carrinho */
+.btn-carrinho {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 7px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* Modal do Carrinho */
+.modal-carrinho {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-carrinho.ativo {
+  display: flex;
+}
+
+.modal-conteudo {
+  background: #fff;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.modal-header button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Lista do carrinho */
+.lista-carrinho {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.lista-carrinho li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.lista-carrinho input[type="number"] {
+  width: 50px;
+  margin: 0 0.5rem;
+}
+
+.lista-carrinho button {
+  background: transparent;
+  border: none;
+  color: #c00;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* Total e vazio */
+.total {
+  font-weight: 700;
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.vazio {
+  text-align: center;
+  color: #555;
+}
+
+.btn-finalizar {
+  width: 100%;
+  padding: 0.8rem;
+  background: #000;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn-finalizar:hover {
+  background: #444;
+}

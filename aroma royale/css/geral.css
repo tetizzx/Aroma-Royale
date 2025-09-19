@@ -1,0 +1,61 @@
+/* Importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+/* Geral */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+/* Navegação alinhada à esquerda */
+.menu-esquerda, nav {
+  display: flex;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.menu-esquerda a, nav a {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu-esquerda a:hover, nav a:hover {
+  color: #555;
+}
+
+/* Logo centralizada */
+.logo-central, .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Cinzel', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #eee;
+}
