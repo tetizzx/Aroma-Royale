@@ -188,7 +188,7 @@ const perfumes = [
     familia: 'Amadeirado Aromático',
     fixacao: 'Alta',
     projecao: 'Média-Alta',
-    info: 'Uma fragrância elegante e moderna que equilibra notas florais e amadeiradas. Ótima para ocasiões formais e trabalho.'
+    info: 'Uma fragrância elegante e moderna que equilibra no0tas florais e amadeiradas. Ótima para ocasiões formais e trabalho.'
   },
   {
     id: 'm15',
@@ -202,7 +202,73 @@ const perfumes = [
     fixacao: 'Alta',
     projecao: 'Alta',
     info: 'Uma explosão de especiarias quentes e viciantes. Perfeito para noites frias e para quem quer deixar uma impressão marcante.'
+  },
+  {
+    id: 'm16',
+    nome: 'Lattafa Asad',
+    marca: 'Lattafa • 100 ml',
+    imagem: 'img/lattafa_asad.webp',
+    notasSaida: 'Pimenta Preta, Tabaco, Abacaxi',
+    notasCorpo: 'Patchouli, Café, Íris',
+    notasFundo: 'Âmbar, Baunilha, Benjoim',
+    familia: 'Âmbar Especiado',
+    fixacao: 'Alta',
+    projecao: 'Alta',
+    info: 'Uma fragrância masculina poderosa e picante com uma doçura sutil, ideal para climas mais amenos e uso noturno.'
+  },
+  {
+    id: 'm17',
+    nome: 'Afnan 9 PM',
+    marca: 'Afnan • 100 ml',
+    imagem: 'img/afnan_9pm.webp',
+    notasSaida: 'Maçã, Canela, Lavanda Selvagem',
+    notasCorpo: 'Flor de Laranjeira, Lírio-do-vale',
+    notasFundo: 'Baunilha, Fava Tonka, Âmbar',
+    familia: 'Âmbar Baunilha',
+    fixacao: 'Muito Alta',
+    projecao: 'Alta',
+    info: 'Doce, potente e duradouro. É a escolha perfeita para a vida noturna, garantindo elogios e presença.'
+  },
+  {
+    id: 'm18',
+    nome: 'Club de Nuit Intense Man',
+    marca: 'Armaf • 105 ml',
+    imagem: 'img/club_de_nuit.webp',
+    notasSaida: 'Limão, Abacaxi, Groselha Preta',
+    notasCorpo: 'Bétula, Jasmim, Rosa',
+    notasFundo: 'Almíscar, Âmbar Cinzento, Baunilha',
+    familia: 'Amadeirado Especiado',
+    fixacao: 'Muito Alta',
+    projecao: 'Muito Alta',
+    info: 'O clássico dos perfumes árabes. Uma fragrância cítrica e esfumaçada com performance lendária, extremamente versátil.'
+  },
+  {
+    id: 'm19',
+    nome: 'Lattafa Khamrah',
+    marca: 'Lattafa • 100 ml',
+    imagem: 'img/lattafa_khamrah.webp',
+    notasSaida: 'Canela, Noz-moscada, Bergamota',
+    notasCorpo: 'Tâmaras, Pralinê, Tuberosa',
+    notasFundo: 'Baunilha, Fava Tonka, Benjoim, Âmbar',
+    familia: 'Âmbar Baunilha',
+    fixacao: 'Muito Alta',
+    projecao: 'Alta',
+    info: 'Fragrância doce e gourmand com notas de tâmaras e canela, frequentemente comparada a sobremesas e bebidas de luxo.'
+  },
+  {
+    id: 'm20',
+    nome: 'Le Beau Le Parfum',
+    marca: 'Jean Paul Gaultier • 125 ml',
+    imagem: 'img/jpg_lebeau.webp',
+    notasSaida: 'Abacaxi, Íris, Cipreste',
+    notasCorpo: 'Coco, Notas Amadeiradas',
+    notasFundo: 'Fava Tonka, Sândalo, Âmbar',
+    familia: 'Amadeirado Aromático',
+    fixacao: 'Alta',
+    projecao: 'Alta',
+    info: 'Tem seu aroma tropical e sedutor. A nota de coco cremoso o torna único e uma máquina de elogios.'
   }
+  
 ];
 
 // ===================================================================
