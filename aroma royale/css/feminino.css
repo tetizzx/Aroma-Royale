@@ -1,0 +1,278 @@
+/* ===================== TOPO ===================== */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+  }
+  
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .search-box {
+    display: flex;
+    flex: 1;
+    max-width: 500px;
+    margin: 0 20px;
+  }
+  
+  .search-box input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-right: none;
+  }
+  
+  .search-box button {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-box button:hover {
+    background: #f5f5f5;
+  }
+  
+  .icons a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+  }
+  
+  /* ===================== MENU ===================== */
+  .main-menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+  }
+  
+  .main-menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .main-menu a:hover,
+  .main-menu a.active {
+    color: #000; /* Removido dourado */
+  }
+  
+  /* ===================== TÍTULO DA PÁGINA ===================== */
+  .page-title {
+    text-align: center;
+    padding: 40px 20px;
+    background: #fff;
+  }
+  
+  .page-title h1 {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  
+  .page-title p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* ===================== PRODUTOS ===================== */
+  .produtos-destaque {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+  }
+  
+  .produtos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .produto {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }
+  
+  .produto img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .produto h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  .produto p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #333; /* sem dourado */
+  }
+  
+  .btn-compra {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .btn-compra:hover {
+    background: #333;
+  }
+  
+  .btn-ver {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn-ver:hover {
+    background: #000;
+    color: #fff;
+  }
+  
+  /* ===================== BENEFÍCIOS ===================== */
+  .benefits {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    background: #f8f8f8;
+  }
+  
+  .benefit-item {
+    flex: 1 1 250px;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px 0;
+  }
+  
+  .benefit-item i {
+    width: 50px;
+    height: 50px;
+    stroke-width: 1.5;
+    color: #000; /* sem dourado */
+    margin-bottom: 15px;
+  }
+  
+  .benefit-item h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #000;
+  }
+  
+  .benefit-item p {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.4;
+  }
+  
+  /* ===================== MODAIS ===================== */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+  }
+  
+  .modal-conteudo {
+    background-color: #fff;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 900px;
+    position: relative;
+  }
+  
+  .modal-fechar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .modal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .modal-grid img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* ===================== RODAPÉ ===================== */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #f8f8f8;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* ===================== RESPONSIVIDADE ===================== */
+  @media (max-width: 992px) {
+    .produtos-container { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .modal-grid { grid-template-columns: 1fr; }
+  }
+  
+  @media (max-width: 768px) {
+    .benefits { flex-direction: column; align-items: center; }
+    .benefit-item { max-width: 90%; }
+  }
+  
+  @media (max-width: 600px) {
+    .main-menu { flex-direction: column; gap: 10px; }
+    .main-menu a { display: block; width: 100%; text-align: center; padding: 10px; border-bottom: 1px solid #eee; }
+    .produtos-container { grid-template-columns: 1fr; gap: 15px; }
+  }
+  

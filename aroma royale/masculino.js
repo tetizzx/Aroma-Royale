@@ -346,3 +346,13 @@ window.addEventListener('keydown', function(e) {
     fecharModal();
   }
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+
+  const produtoId = urlParams.get('produto');
+
+  if (produtoId) {
+    abrirModal(produtoId);
+  }
+});
