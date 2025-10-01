@@ -346,6 +346,7 @@ window.addEventListener('keydown', function(e) {
     fecharModal();
   }
 });
+<<<<<<< HEAD
 // ===================================================================
 // CÓDIGO PARA ABRIR MODAL AUTOMATICAMENTE (VIA URL)
 // ===================================================================
@@ -361,6 +362,15 @@ window.addEventListener('DOMContentLoaded', () => {
   // 3. Se encontrou o parâmetro 'produto' (ex: 'm5')...
   if (produtoId) {
     // ...chama a nossa função para abrir o modal com esse ID!
+=======
+
+window.addEventListener('DOMContentLoaded', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+
+  const produtoId = urlParams.get('produto');
+
+  if (produtoId) {
+>>>>>>> 39cf53ed1346adaf642da9721354247dfe61f758
     abrirModal(produtoId);
   }
 });

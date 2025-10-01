@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aroma Royale</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/masculino.css">
+</head>
+<body>
+
+<!-- Barra superior -->
+<header class="top-bar">
+  <div class="logo">Aroma Royale</div>
+<div class="search-box">
+  <input type="text" placeholder="O que você está buscando?">
+  <button>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85zm-5.242 1.656a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/>
+    </svg>
+  </button>
+</div>
+  <div class="icons">
+    <a href="#">Minha Conta</a>
+    <a href="#">Carrinho</a>
+  </div>
+</header>
+
+<nav class="main-menu">
+  <a href="index.html">Início</a>
+  <a href="masculino.html" class="active">Perfumes Masculinos</a>
+  <a href="feminino.html">Perfumes Femininos</a>
+  <a href="compartilhaveis.html">Compartilháveis</a>
+  <a href="contato.html">Contato</a>
+</nav>
+
+<section class="page-title">
+  <h1>Perfumes Femininos</h1>
+  <p>Explore nossa seleção de fragrâncias florais, gourmands e atemporais — clique em "Ver mais" para descobrir cada detalhe.</p>
+</section>
+
+<!-- Produtos -->
+<section class="produtos-destaque">
+  <div class="produtos-container">
+
+    <article class="produto">
+      <img src="img/coco_mademoiselle.webp" alt="Chanel Coco Mademoiselle" />
+      <h3>Coco Mademoiselle</h3>
+      <p class="marca">Chanel</p>
+      <p class="volume">100 ml</p>
+      <p class="preco">R$ 950,00</p>
+      <div class="prod-actions">
+        <a class="btn-compra" href="#">Comprar</a>
+        <button class="btn-ver" onclick="abrirModal('f1')">Ver mais</button>
+      </div>
+    </article>
+    
+    <article class="produto">
+      <img src="img/la_vie_est_belle.webp" alt="Lancôme La Vie Est Belle" />
+      <h3>La Vie Est Belle</h3>
+      <p class="marca">Lancôme</p>
+      <p class="volume">100 ml</p>
+      <p class="preco">R$ 750,00</p>
+      <div class="prod-actions">
+        <a class="btn-compra" href="#">Comprar</a>
+        <button class="btn-ver" onclick="abrirModal('f2')">Ver mais</button>
+      </div>
+    </article>
+    
+    <article class="produto">
+      <img src="img/ysl_libre.webp" alt="Yves Saint Laurent Libre" />
+      <h3>Libre</h3>
+      <p class="marca">Yves Saint Laurent</p>
+      <p class="volume">90 ml</p>
+      <p class="preco">R$ 800,00</p>
+      <div class="prod-actions">
+        <a class="btn-compra" href="#">Comprar</a>
+        <button class="btn-ver" onclick="abrirModal('f3')">Ver mais</button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- Benefícios -->
+<section class="benefits">
+  <div class="benefit-item">
+    <i data-feather="shield"></i>
+    <h3>SITE SEGURO</h3>
+    <p>Compre com segurança</p>
+  </div>
+  <div class="benefit-item">
+    <i data-feather="credit-card"></i>
+    <h3>EM 4X SEM JUROS</h3>
+    <p>Cartão ou parcelamento</p>
+  </div>
+  <div class="benefit-item">
+    <i data-feather="truck"></i>
+    <h3>FRETE GRÁTIS</h3>
+    <p>Acima de R$ 400,00</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Aroma Royale. Todos os direitos reservados.</p>
+</footer>
+
+<div id="modal-produto" class="modal" role="dialog" aria-hidden="true">
+  <div class="modal-conteudo">
+    <button id="modal-fechar" class="modal-fechar" aria-label="Fechar">&times;</button>
+    <div class="modal-grid">
+      <img id="modal-img" src="" alt="Imagem do Perfume">
+      <div>
+        <h2 id="modal-titulo"></h2>
+        <p id="modal-marca" class="marca"></p>
+        <p><strong>Notas de saída:</strong> <span id="modal-notas-saida"></span></p>
+        <p><strong>Notas de corpo:</strong> <span id="modal-notas-corpo"></span></p>
+        <p><strong>Notas de fundo:</strong> <span id="modal-notas-fundo"></span></p>
+        <p><strong>Família olfativa:</strong> <span id="modal-familia"></span></p>
+        <p><strong>Fixação:</strong> <span id="modal-fixacao"></span> • <strong>Projeção:</strong> <span id="modal-projecao"></span></p>
+        <h4>Informações importantes</h4>
+        <p id="modal-info"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Feather icons + JS -->
+<script src="https://unpkg.com/feather-icons"></script>
+<script>feather.replace();</script>
+<script src="feminino.js"></script>
+
+</body>
+</html>
