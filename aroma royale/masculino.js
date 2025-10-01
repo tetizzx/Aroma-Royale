@@ -346,3 +346,21 @@ window.addEventListener('keydown', function(e) {
     fecharModal();
   }
 });
+// ===================================================================
+// CÓDIGO PARA ABRIR MODAL AUTOMATICAMENTE (VIA URL)
+// ===================================================================
+
+// Este código executa assim que a página termina de carregar
+window.addEventListener('DOMContentLoaded', () => {
+  // 1. Pega a URL completa da página atual
+  const urlParams = new URLSearchParams(window.location.search);
+
+  // 2. Procura por um parâmetro chamado 'produto' na URL
+  const produtoId = urlParams.get('produto');
+
+  // 3. Se encontrou o parâmetro 'produto' (ex: 'm5')...
+  if (produtoId) {
+    // ...chama a nossa função para abrir o modal com esse ID!
+    abrirModal(produtoId);
+  }
+});
